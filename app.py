@@ -50,7 +50,7 @@ st.markdown(
 st.markdown(
     """
     # Projects
-    - [Project 1](https://www.google.com)
+    - [Project 1](https://ziyisun.com/blossom/)
     - [Project 2](https://www.google.com)
     - [Project 3](https://www.google.com)
     - [Project 4](https://www.google.com)
@@ -66,19 +66,53 @@ st.markdown(
 )
 # Card with image and text
 col1, col2, col3 = st.columns(3)
-for col in [col1, col2, col3]:
+for col in [col1]:
     col.markdown(
         """
         <style>
-        .content-img img {
+        .profile-img img {
             width: 100%;
             border-radius: 10%;
         }
         </style>
 
-        <div class="content-img">
+        <div class="profile-img">
 
-        ![](media/TRAVEL1.jpg)
+        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL1.jpg)
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+for col in [col2]:
+    col.markdown(
+        """
+        <style>
+        .profile-img img {
+            width: 100%;
+            border-radius: 10%;
+        }
+        </style>
+
+        <div class="profile-img">
+
+        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL2.jpg)
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+for col in [col3]:
+    col.markdown(
+        """
+        <style>
+        .profile-img img {
+            width: 100%;
+            border-radius: 10%;
+        }
+        </style>
+
+        <div class="profile-img">
+
+        ![](https://loeildeos.com/wp-content/uploads/2020/11/quand-faire-le-tour-des-glaciers-de-la-vanoise.jpg)
         </div>
         """,
         unsafe_allow_html=True,
@@ -96,20 +130,19 @@ for col in [col1, col2, col3]:
     col.markdown(
         """
         <style>
-        .content-img img {
+        .profile-img img {
             width: 100%;
             border-radius: 10%;
         }
         </style>
 
-        <div class="content-img">
+        <div class="profile-img">
 
-        ![](media/COOKING1.jpg)
+        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING1.jpg)
         </div>
         """,
         unsafe_allow_html=True,
     )
-    
    
 ft = """
 <style>
