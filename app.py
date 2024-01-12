@@ -1,5 +1,6 @@
 import streamlit as st
 
+# Set page configuration
 st.set_page_config(
     page_title="Zia Sun - UX designer, Architect, ",
     page_icon=":rice:",
@@ -7,10 +8,14 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
+# Define columns
 col1, col2 = st.columns([0.3, 0.7])
+
+# Column 1 with image
 with col1:
     st.image('media/Zia_Profile.jpg', use_column_width=True)
 
+# Column 2 with text
 with col2:
     st.markdown(
         """
@@ -21,16 +26,17 @@ with col2:
         """
     )
 
-st.markdown("# About")
-
+# About section
+st.markdown("# :ok_woman: About")
 st.markdown(
     """
-    I am a creative designer with a package of skills in different fields. As an architect, and UX designer, my different identities provide me with different perspectives on issues, and I hope to respond and solve the problems through design.
+    I am a creative designer with a package of skills in different fields. 
+    As an architect and UX designer, my different identities provide me with different perspectives on issues, and I hope to respond and solve the problems through design.
     """
 )
 
-st.markdown("# Education")
-
+# Education section
+st.markdown("# :mortar_board: Education")
 st.markdown(
     """
     - [University of Washington](https://www.washington.edu/) - Master of Science in Technology innovation - 2023~2025
@@ -38,8 +44,8 @@ st.markdown(
     """
 )
 
-st.markdown("# Work Experience")
-
+# Work Experience section
+st.markdown("# :briefcase: Work Experience")
 st.markdown(
     """
     - Aproject Factory - UX designer - 2022-2023
@@ -47,136 +53,81 @@ st.markdown(
     """
 )
 
+# Projects section
 st.markdown(
     """
-    # Projects
-    - [Project 1](https://ziyisun.com/blossom/)
-    - [Project 2](https://ziyisun.com/growing-together/)
-    - [Project 3](https://ziyisun.com/elementor-3973/)
+    # :book: Projects
+    - [Project 1 - Blossom](https://ziyisun.com/blossom/)
+    - [Project 2 - GrowingTogether](https://ziyisun.com/growing-together/)
+    - [Project 3 - A-NFT](https://ziyisun.com/elementor-3973/)
     """
 )
 
-st.markdown("# Hobbies and Interests")
-
+# Hobbies and Interests section
+st.markdown("# :heartpulse: Hobbies and Interests")
 st.markdown(
     """
-    - I love to travel and explore new places.
+    - :sunrise_over_mountains: I love to travel and explore new places.
     """
 )
-# Card with image and text
+
+# Display travel images
 col1, col2, col3 = st.columns(3)
-for col in [col1]:
+for col, image_url in zip([col1, col2, col3], [
+    "https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL1.jpg",
+    "https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL2.jpg",
+    "https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL3.jpg"
+]):
     col.markdown(
-        """
+        f"""
         <style>
-        .profile-img img {
+        .profile-img img {{
             width: 100%;
             border-radius: 10%;
-        }
+        }}
         </style>
 
         <div class="profile-img">
 
-        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL1.jpg)
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-for col in [col2]:
-    col.markdown(
-        """
-        <style>
-        .profile-img img {
-            width: 100%;
-            border-radius: 10%;
-        }
-        </style>
-
-        <div class="profile-img">
-
-        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING2.jpg)
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-for col in [col3]:
-    col.markdown(
-        """
-        <style>
-        .profile-img img {
-            width: 100%;
-            border-radius: 10%;
-        }
-        </style>
-
-        <div class="profile-img">
-
-        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING3.jpg)
+        ![]({image_url})
         </div>
         """,
         unsafe_allow_html=True,
     )
 
+# Cooking section
 st.markdown(
     """
-    - I like cooking Chinese food.
+    - :ramen: I like cooking Chinese food.
     """
 )
 
+# Display cooking images
 col1, col2, col3 = st.columns(3)
-for col in [col1]:
+for col, image_url in zip([col1, col2, col3], [
+    "https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING1.jpg",
+    "https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING2.jpg",
+    "https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING3.jpg"
+]):
     col.markdown(
-        """
+        f"""
         <style>
-        .profile-img img {
+        .profile-img img {{
             width: 100%;
             border-radius: 10%;
-        }
+        }}
         </style>
 
         <div class="profile-img">
 
-        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING1.jpg)
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-for col in [col2]:
-    col.markdown(
-        """
-        <style>
-        .profile-img img {
-            width: 100%;
-            border-radius: 10%;
-        }
-        </style>
-
-        <div class="profile-img">
-
-        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL2.jpg)
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-for col in [col3]:
-    col.markdown(
-        """
-        <style>
-        .profile-img img {
-            width: 100%;
-            border-radius: 10%;
-        }
-        </style>
-
-        <div class="profile-img">
-
-        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL3.jpg)
+        ![]({image_url})
         </div>
         """,
         unsafe_allow_html=True,
     )
 
-ft = """
+# Footer
+footer_text = """
 <style>
 a:link , a:visited{
 color: #BFBFBF;  /* theme's text color hex code at 75 percent brightness*/
@@ -220,4 +171,4 @@ with <img src="https://em-content.zobj.net/source/skype/289/red-heart_2764-fe0f.
 
 </div>
 """
-st.write(ft, unsafe_allow_html=True)
+st.write(footer_text, unsafe_allow_html=True)
