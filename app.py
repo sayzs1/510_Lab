@@ -112,7 +112,7 @@ for col in [col3]:
 
         <div class="profile-img">
 
-        ![](https://loeildeos.com/wp-content/uploads/2020/11/quand-faire-le-tour-des-glaciers-de-la-vanoise.jpg)
+        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL3.jpg)
         </div>
         """,
         unsafe_allow_html=True,
