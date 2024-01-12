@@ -70,15 +70,15 @@ for col in [col1, col2, col3]:
     col.markdown(
         """
         <style>
-        .profile-img img {
+        .content-img img {
             width: 100%;
             border-radius: 10%;
         }
         </style>
 
-        <div class="profile-img">
+        <div class="content-img">
 
-        ![](https://avatars.githubusercontent.com/u/7678108?v=4)
+        ![](media/TRAVEL1.jpg)
         </div>
         """,
         unsafe_allow_html=True,
@@ -96,20 +96,20 @@ for col in [col1, col2, col3]:
     col.markdown(
         """
         <style>
-        .profile-img img {
+        .content-img img {
             width: 100%;
             border-radius: 10%;
         }
         </style>
 
-        <div class="profile-img">
+        <div class="content-img">
 
-        ![](https://avatars.githubusercontent.com/u/7678108?v=4)
+        ![](media/COOKING1.jpg)
         </div>
         """,
         unsafe_allow_html=True,
     )
-
+    
    
 ft = """
 <style>
