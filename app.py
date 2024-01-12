@@ -51,9 +51,8 @@ st.markdown(
     """
     # Projects
     - [Project 1](https://ziyisun.com/blossom/)
-    - [Project 2](https://www.google.com)
-    - [Project 3](https://www.google.com)
-    - [Project 4](https://www.google.com)
+    - [Project 2](https://ziyisun.com/growing-together/)
+    - [Project 3](https://ziyisun.com/elementor-3973/)
     """
 )
 
@@ -95,6 +94,65 @@ for col in [col2]:
 
         <div class="profile-img">
 
+        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING2.jpg)
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+for col in [col3]:
+    col.markdown(
+        """
+        <style>
+        .profile-img img {
+            width: 100%;
+            border-radius: 10%;
+        }
+        </style>
+
+        <div class="profile-img">
+
+        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING3.jpg)
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown(
+    """
+    - I like cooking Chinese food.
+    """
+)
+
+col1, col2, col3 = st.columns(3)
+for col in [col1]:
+    col.markdown(
+        """
+        <style>
+        .profile-img img {
+            width: 100%;
+            border-radius: 10%;
+        }
+        </style>
+
+        <div class="profile-img">
+
+        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING1.jpg)
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+for col in [col2]:
+    col.markdown(
+        """
+        <style>
+        .profile-img img {
+            width: 100%;
+            border-radius: 10%;
+        }
+        </style>
+
+        <div class="profile-img">
+
         ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/TRAVEL2.jpg)
         </div>
         """,
@@ -118,32 +176,6 @@ for col in [col3]:
         unsafe_allow_html=True,
     )
 
-st.markdown(
-    """
-    - I like cooking Chinese food.
-    """
-)
-col1, col2, col3 = st.columns(3)
-
-# Card with image and text
-for col in [col1, col2, col3]:
-    col.markdown(
-        """
-        <style>
-        .profile-img img {
-            width: 100%;
-            border-radius: 10%;
-        }
-        </style>
-
-        <div class="profile-img">
-
-        ![](https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/COOKING1.jpg)
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-   
 ft = """
 <style>
 a:link , a:visited{
