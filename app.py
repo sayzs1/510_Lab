@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(
     page_title="Zia Sun - UX designer, Architect, ",
     page_icon=":rice:",
-    layout="centered",  # centered or wide
+    layout="centered",
     initial_sidebar_state="auto",
 )
 
