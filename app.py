@@ -6,49 +6,89 @@ st.set_page_config(
     layout="centered",  # centered or wide
     initial_sidebar_state="auto",
 )
-#
+
 col1, col2 = st.columns([0.3, 0.7])
 with col1:
-    st.markdown(
-        """
-    <style>
-    .profile-img img {
-        width: 100%;
-        border-radius: 50%;
-    }
-    </style>
+    st.image('media/Zia_Profile.jpg', use_column_width=True)
 
-    <div class="profile-img">
-
-    ![](media\Zia_Profile.jpg)
-    </div>
-    """,
-        unsafe_allow_html=True,
-    )
-    # st.image('media\Zia_Profile.jpg')
 with col2:
     st.markdown(
         """
-    # Zia Sun (She/Her)
-                
-    - Student at [UW](https://www.washington.edu/)
-    """
+        # Zia Sun (She/Her)
+        - UX designer, Architect                    
+        - Graduate Student at [UW](https://www.washington.edu/)
+        - Global Innovation Exchange [GIX](https://gix.uw.edu/)
+        """
     )
+
+st.markdown("# About")
 
 st.markdown(
     """
-# Projects
+    I am a creative designer with a package of skills in different fields. As an architect, and UX designer, my different identities provide me with different perspectives on issues, and I hope to respond and solve the problems through design.
+    """
+)
 
-- [Project 1](https://www.google.com)
-- [Project 2](https://www.google.com)
-- [Project 3](https://www.google.com)
-"""
+st.markdown("# Education")
+
+st.markdown(
+    """
+    - [University of Washington](https://www.washington.edu/) - Master of Science in Technology innovation - 2023~2025
+    - [University of Nottingham](https://www.nottingham.ac.uk/) - Bachelor of Engineering in Architecture - 2017~2021
+    """
+)
+
+st.markdown("# Work Experience")
+
+st.markdown(
+    """
+    - Aproject Factory - UX designer - 2022-2023
+    - ECADI(East China Architecture Design Institution) - Architect intern - 2021-2022
+    """
 )
 
 st.markdown(
     """
-# Contact
-""")
+    # Projects
+    - [Project 1](https://www.google.com)
+    - [Project 2](https://www.google.com)
+    - [Project 3](https://www.google.com)
+    - [Project 4](https://www.google.com)
+    """
+)
+
+st.markdown("# Hobbies and Interests")
+
+st.markdown(
+    """
+    - I love to travel and explore new places.
+    """
+)
+# Card with image and text
+col1, col2, col3 = st.columns(3)
+for col in [col1, col2, col3]:
+    col.markdown(
+        """
+        <style>
+        .profile-img img {
+            width: 100%;
+            border-radius: 10%;
+        }
+        </style>
+
+        <div class="profile-img">
+
+        ![](https://avatars.githubusercontent.com/u/7678108?v=4)
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown(
+    """
+    - I like cooking Chinese food.
+    """
+)
 col1, col2, col3 = st.columns(3)
 
 # Card with image and text
@@ -70,27 +110,7 @@ for col in [col1, col2, col3]:
         unsafe_allow_html=True,
     )
 
-col1, col2, col3 = st.columns(3)
-
-# Card with image and text
-for col in [col1, col2, col3]:
-    col.markdown(
-        """
-        <style>
-        .profile-img img {
-            width: 100%;
-            border-radius: 10%;
-        }
-        </style>
-
-        <div class="profile-img">
-
-        ![](https://avatars.githubusercontent.com/u/7678108?v=4)
-        </div>
-        """,
-        unsafe_allow_html=True,
-    ) 
-
+   
 ft = """
 <style>
 a:link , a:visited{
@@ -135,3 +155,4 @@ with <img src="https://em-content.zobj.net/source/skype/289/red-heart_2764-fe0f.
 
 </div>
 """
+st.write(ft, unsafe_allow_html=True)
