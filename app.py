@@ -11,9 +11,28 @@ st.set_page_config(
 # Define columns
 col1, col2 = st.columns([0.3, 0.7])
 
-# Column 1 with image
+# Column 1 with profile image
 with col1:
-    st.image('media/Zia_Profile.jpg', use_column_width=True)
+    st.markdown(
+        """
+        <style>
+          .circle-image {
+              width: 200px;
+              height: 200px;
+              border-radius: 50%;
+              overflow: hidden;
+              box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          }
+          
+          .circle-image img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+          }
+        </style>
+        """, unsafe_allow_html=True)
+    
+    st.markdown('<div class="circle-image"><img src="https://raw.githubusercontent.com/sayzs1/510_Lab/main/media/Zia_Profile.jpg" alt="Profile Picture"></div>', unsafe_allow_html=True)
 
 # Column 2 with text
 with col2:
